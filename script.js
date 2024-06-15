@@ -14,6 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    //mob
+
+    document.getElementById('lang-toggle_mobile').addEventListener('click', function() {
+        var imgElement = this;
+        if (imgElement.classList.contains('ru')) {
+            imgElement.classList.remove('ru');
+            imgElement.classList.add('eng');
+        } else if (imgElement.classList.contains('eng')) {
+            imgElement.classList.remove('eng');
+            imgElement.classList.add('ru');
+        } else {
+            imgElement.classList.add('ru');
+        }
+    });
+
+
+
 
     const blogContainer = document.querySelector('.blog');
     const scrollSpeed = 3; 

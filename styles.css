@@ -49,7 +49,7 @@ nav ul li a {
     line-height: 20px;
     font-weight: 400;
 }
-.language-switcher{
+.nav-language-switcher{
     width: 75px;
     height: 48px;
     padding: 14px;
@@ -60,12 +60,12 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
 }
-.language-switcher img{
+.nav-language-switcher img{
     width: 16px;
     height: 16px;
     padding: 0.5px 0px 0px 0px;
 }
-.language-switcher button{
+.nav-language-switcher button{
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -79,12 +79,12 @@ nav ul li a {
     gap: 14px;
   
 }
-.auth{
+.nav-auth{
     display: flex;
     gap: 14px;
     
 }
-.auth button{
+.nav-auth button{
     width: 87px;
     height: 48px;
     padding: 14px;
@@ -94,7 +94,7 @@ nav ul li a {
     font-size: 16px;
     background-color: #191D0A;
 }
-.auth button:nth-child(2){
+.nav-auth .btn_active{
     width: 97px;
     padding: 12px;
     background-color: #F97247;
@@ -110,26 +110,26 @@ nav ul li a {
     background-repeat: no-repeat;
     /* padding: 100px 0; */
 }
-.title{
+.home_title{
     margin: 0 60px ;
 }
-.title h1{
+.home_title h1{
     margin-top: 30px;
     font-size: 96px;
     color: #FFFFFF;
     font-weight: 500;
     line-height: 96px;
 }
-.title h1 span{
+.home_title h1 span{
     color: #F97247;
 }
-.title p{
+.home_title p{
     font-size: 32px;
     color: #FFFFFF99;
     line-height: 1.2;
     padding: 24px 0;
 }
-.title button{
+.home_title button{
     font-size: 24px;
     color:#FFFFFF;
     font-weight: 600;
@@ -300,7 +300,7 @@ nav ul li a {
     gap: 12px;
     margin-bottom: 20px;
 }
-.blog-post:first-child{
+.blog-posts .blog_active{
     background-color: #F97247;
 
 }
@@ -345,18 +345,18 @@ nav ul li a {
     align-items: center;
     flex-wrap: wrap;
 }
-.pages{
+.footer_pages{
     display: flex;
     gap: 32px;
 }
-.pages a:first-child{
+.footer_pages .pages_active{
     font-size: 16px;
     color: #F97247;
     font-weight: 400;
     line-height: 20px;
     text-decoration: underline;
 }
-.pages a{
+.footer_pages a{
     color: #fff;
 }
 .social-links h2{
@@ -375,7 +375,7 @@ nav ul li a {
 .social-link:hover{
     filter: brightness(0.9) sepia(0.4);
 } 
-.nav-mobile{
+.nav-mobile_btns{
     display: none;
 }
 .mob-shields1, .mob-shields2, .mob-shields3{
@@ -432,7 +432,7 @@ nav ul li a {
     .navigation, .nav-buttons{
         display: none;
     }
-    .nav-mobile{
+    .nav-mobile_btns{
         display: flex;
         position: absolute;
         right: 20px;
@@ -442,10 +442,9 @@ nav ul li a {
     }
     .mob-shields1, .mob-shields2, .mob-shields3{
         display: flex;
-        /* flex-direction: column; */
         width: 100%;
     }
-    .title{
+    .home_title{
         width: 100%;
         text-align: center;
         
@@ -465,10 +464,13 @@ nav ul li a {
         position: absolute;
         
     }
+    header{
+        margin: 16px 40px 0;
+    }
 
 }
 @media(max-width:930px){
-    .pages{
+    .footer_pages{
         flex-direction: column;
         gap: 5px;
         flex-wrap: wrap;
@@ -477,7 +479,7 @@ nav ul li a {
     .mob-footer{
         display: block;
     }
-    .pages a:first-child{
+    .footer_pages .pages_active{
         color: #fff;
         text-decoration: none;
     }
@@ -495,15 +497,15 @@ nav ul li a {
     .mobile-menu{
         padding: 20px 40px;
     }
-    .title h1{
+    .home_title h1{
         font-size: 46px;
         line-height: 46px;
     }
-    .title p{
+    .home_title p{
         font-size: 20px;
         padding: 10px;
     }
-    .title button{
+    .home_title button{
         width: 100%;
         font-size: 16px;
     }
@@ -547,7 +549,7 @@ nav ul li a {
         right: 0;
         top: 80px;
     }
-    .title {
+    .home_title {
         margin: 0 10px;
     }
 }

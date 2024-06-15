@@ -19,22 +19,20 @@
             </ul>
         </nav>
         <div class="nav-buttons">
-            <div class="language-switcher">
+            <div class="nav-language-switcher">
                 <img src="images/IconPlanet.png" alt="">
                 <button id="lang-toggle" class="lang-button active">RU</button>
             </div>
-            <div class="auth">
+            <div class="nav-auth">
                 <button>LOG IN</button>
-                <button>SIGN UP</button>
+                <button class="btn_active">SIGN UP</button>
             </div>
-            
         </div>
-        <div class="nav-mobile">
-            <img src="images/BtnLanguage.png" alt="">
+        <div class="nav-mobile_btns">
+            <img id="lang-toggle_mobile" src="images/BtnLanguage.png" class="lang-button_mob active" alt="">
             <img src="images/Menu.png" id="menu-icon" alt="">
         </div>
     </header>
-
     <div class="mobile-menu" id="navigation">
         <nav class="mob-navigation">
             <ul>
@@ -53,7 +51,7 @@
     </div>
 
     <section class="home">
-        <div class="title">
+        <div class="home_title">
             <h1>Lorem IPSU <span>OPEN</span></h1>
             <p>Maybe You Maybe Me.</p>
             <button>PARTNER</button>
@@ -131,7 +129,7 @@
             <h1 class="blog-title">BLUB</h1>
             <div class="blog">
                 <div class="blog-posts">
-                    <div class="blog-post" id="post-1">
+                    <div class="blog-post blog_active" id="post-1">
                         <a href="post1.html">Payment methods: Skrill, Neteller, webmoney, Bank transfer</a>
                         <span>10.02.2023</span>
                     </div>
@@ -153,13 +151,11 @@
                     </div>
                 </div>
             </div>
-            
-            
         </div>
     </section>
     <footer class="footer">
-        <div class="pages">
-            <a href="#">Terms & Conditions</a>
+        <div class="footer_pages">
+            <a href="#" class="pages_active">Terms & Conditions</a>
             <a href="#">Cookies</a>
             <a href="#">Contacts</a>
             <div class="mob-footer">
